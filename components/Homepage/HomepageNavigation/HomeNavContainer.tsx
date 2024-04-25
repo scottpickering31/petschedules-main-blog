@@ -23,9 +23,9 @@ function HomeNavContainer() {
       <div className="w-full">
         {search ? <HomeSearchDisplay search={search} /> : <HomeSearchDefault />}
       </div>
-      <div className="flex flex-row w-1/2 h-full items-center justify-end gap-5 p-5">
+      <div className="flex flex-row w-1/2 h-full items-center justify-end gap-6 p-5">
         <HomeSearch setSearch={setSearch} search={search} />
-        <Link href="/" className="hover:text-fawn">
+        <Link href="/support" className="hover:text-fawn">
           Support
         </Link>
         <Link href="/login" className="hover:text-fawn">

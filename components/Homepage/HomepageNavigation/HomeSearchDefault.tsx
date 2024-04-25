@@ -8,8 +8,8 @@ function HomeSearchDefault() {
       <Link href="/products" className={NavStyles}>
         Products
       </Link>
-      <Link href="/solutions" className={NavStyles}>
-        Solutions
+      <Link href="/pricing" className={NavStyles}>
+        Pricing
       </Link>
       <Link href="/blog" className={NavStyles}>
         Blog
@@ -19,9 +19,6 @@ function HomeSearchDefault() {
       </Link>
       <Link href="/frequently-asked-questions" className={NavStyles}>
         FAQ
-      </Link>
-      <Link href="/contact" className={NavStyles}>
-        Contact
       </Link>
     </div>
   );

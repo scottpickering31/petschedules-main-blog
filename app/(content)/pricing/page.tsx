@@ -3,7 +3,7 @@
 import React from "react";
 import { useRouter } from "next/navigation";
 import PricingField from "@/components/Pricing/PricingField";
-import { PRICING_DATA } from "../../data/Pricing/PricingData";
+import { PRICING_DATA } from "../../../data/Pricing/PricingData";
 
 const pricingStyles =
   "h-5/6 w-1/4 m-4 border border-gray-50 rounded-2xl shadow-2xl bg-apricot flex items-center flex-col justify-between p-5";
