@@ -11,10 +11,19 @@ function HomeSearchDisplay({ search }: { search: boolean }) {
     <div className={className}>
       <input
         type="text"
-        placeholder="Search Groomers, Trainers, Vets and More!"
-        className="p-3 border border-black rounded-2xl w-1/2"
+        placeholder="...Search Groomers, Trainers, Vets and More!"
+        className="p-3 border border-black rounded-2xl w-1/2 text-sm"
       />
-      <p>Labelling probably</p>
+      <select
+        id="services"
+        name="services"
+        className="bg-gray-50 border p-3.5 rounded-2xl w-1/4 border-gray-300 text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+      >
+        <option value="General Information">General Information</option>
+        <option value="Documentation">Documentation</option>
+        <option value="FAQs">FAQs</option>
+        <option value="Blog">Blog</option>
+      </select>
       <Image
         src={MagnifyingGlassDark}
         alt="PetSchedules Logo"

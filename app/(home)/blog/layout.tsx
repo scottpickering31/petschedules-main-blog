@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import Navbar from "@/components/Shared/Navbar/Navbar";
 import "../../globals.css";
+import HomeNavContainer from "@/components/Homepage/HomepageNavigation/HomeNavContainer";
 
 export const metadata: Metadata = {
   title: "PetSchedules - Blog",
@@ -13,8 +13,10 @@ export default function BlogLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className="pt-5">
-      <Navbar />
+    <div>
+      <header>
+        <HomeNavContainer />
+      </header>
       {children}
     </div>
   );

@@ -20,6 +20,7 @@ export default function Home() {
         <FeaturesContainer />
         <ReviewsContainer />
         <ServicesContainer />
+        <div id="modal-root"></div>
         <div className="bg-white">
           <AboutContainer />
         </div>
