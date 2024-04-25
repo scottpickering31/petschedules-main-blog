@@ -9,7 +9,7 @@ import HomeNavContainer from "@/components/Homepage/HomepageNavigation/HomeNavCo
 
 export default function Home() {
   return (
-    <div className="bg-sandy">
+    <div>
       <header>
         <HomeNavContainer />
       </header>

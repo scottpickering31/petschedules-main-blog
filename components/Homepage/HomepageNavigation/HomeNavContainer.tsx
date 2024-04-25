@@ -23,7 +23,7 @@ function HomeNavContainer() {
       <div className="w-full">
         {search ? <HomeSearchDisplay search={search} /> : <HomeSearchDefault />}
       </div>
-      <div className="flex flex-row w-1/2 h-full items-center justify-end gap-6 p-5">
+      <div className="flex flex-row w-2/3 h-full items-center justify-end gap-6 p-5">
         <HomeSearch setSearch={setSearch} search={search} />
         <Link href="/support" className="hover:text-fawn">
           Support
@@ -34,9 +34,9 @@ function HomeNavContainer() {
         <div className="px-5 hover:text-white hover:scale-110">
           <Link
             href="/register"
-            className="border-4 border-gray-300 border-spacing-3 p-4 rounded-full bg-fawn"
+            className="border-4 border-gray-500 border-spacing-3 p-4 rounded-full bg-fawn font-bold"
           >
-            Try Free
+            TRY FREE
           </Link>
         </div>
       </div>
