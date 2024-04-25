@@ -1,5 +1,6 @@
 import "./HomeSearchStyles.css";
 import Image from "next/image";
+import Link from "next/link";
 import MagnifyingGlassDark from "../../../public/svg/NavIcons/MagnifyingGlassDark.svg";
 import { useState, useEffect, useRef } from "react";
 
@@ -48,12 +49,12 @@ function HomeSearchDisplay({ search }: { search: boolean }) {
       <input
         type="text"
         placeholder="...Search Groomers, Trainers, Vets and More!"
-        className="p-3 border-2 border-black rounded-2xl w-1/2 placeholder:text-black focus:placeholder-transparent focus:border-fawn focus:outline-none focus:ring-0"
+        className="p-2 border-2 border-black rounded-2xl w-1/2 placeholder:text-black focus:placeholder-transparent focus:border-fawn focus:outline-none focus:ring-0"
       />
 
       <div className="relative w-1/4" ref={dropdownRef}>
         <button
-          className="rounded-2xl w-full p-3 overflow-hidden border-black border-2 bg-white focus:border-fawn"
+          className="rounded-2xl w-full p-2 overflow-hidden border-black border-2 bg-white focus:border-fawn"
           onClick={handleClick}
         >
           {searchResults}
@@ -89,13 +90,15 @@ function HomeSearchDisplay({ search }: { search: boolean }) {
           </button>
         </div>
       </div>
-      <Image
-        src={MagnifyingGlassDark}
-        alt="PetSchedules Logo"
-        width={30}
-        height={30}
-        className="hover:text-fawn"
-      />
+      <Link href="/searchresults" className="hover:text-fawn">
+        <Image
+          src={MagnifyingGlassDark}
+          alt="PetSchedules Logo"
+          width={30}
+          height={30}
+          className="hover:text-fawn"
+        />
+      </Link>
     </div>
   );
 }
