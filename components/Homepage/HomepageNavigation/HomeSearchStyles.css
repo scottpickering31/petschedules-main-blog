@@ -30,10 +30,10 @@
 }
 
 .mounted {
-  animation: inAnimation 150ms ease-in forwards;
+  animation: inAnimation 300ms ease-in forwards;
 }
 
 .unmounted {
-  animation: outAnimation 170ms ease-out forwards;
+  animation: outAnimation 320ms ease-out forwards;
   animation-direction: reverse;
 }

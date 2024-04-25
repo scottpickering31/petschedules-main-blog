@@ -9,7 +9,7 @@ import HomeSearchDefault from "./HomeSearchDefault";
 function HomeNavContainer() {
   const [search, setSearch] = useState(false);
 
-  const setOpacity = search ? "hover:opacity-100" : "opacity-80";
+  const setOpacity = search ? "hover:opacity-100" : "opacity-90";
 
   return (
     <nav

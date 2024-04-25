@@ -24,6 +24,13 @@ const config: Config = {
         apricot: "#F2B600",
         fawn: "#F8817F",
       },
+      borderColor: {
+        sandy: "#F5AC72",
+        sandyBrown: "#F2AA7E",
+        space: "#3E4E50",
+        apricot: "#F2B600",
+        fawn: "#F8817F",
+      },
       height: {
         tiny: "30vh",
         little: "50vh",
