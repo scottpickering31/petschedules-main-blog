@@ -17,6 +17,9 @@ const config: Config = {
         apricot: "#F2B600",
         fawn: "#F8817F",
       },
+      borderRadius: {
+        radXL: "10rem",
+      },
       textColor: {
         sandy: "#F5AC72",
         sandyBrown: "#F2AA7E",

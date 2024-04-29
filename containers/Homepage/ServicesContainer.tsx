@@ -3,7 +3,7 @@ import { petServices } from "../../data/Services/ServiceData";
 
 const ServicesContainer = () => {
   return (
-    <div className="flex flex-col p-10 bg-white gap-5 text-center">
+    <div className="flex flex-col p-10 bg-white gap-5 text-center h-screen">
       <div className="text-center p-10">
         <h1 className="text-4xl font-bold">We offer these services</h1>
       </div>

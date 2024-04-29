@@ -8,12 +8,23 @@ const FeaturesContainer = () => {
   return (
     <div>
       <Features
-        image={MobileDashboard}
-        information="Whatever"
+        image={Calendar}
+        information="lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         isInverted={false}
+        title="Scheduling for Pet & Business Owners"
       />
-      <Features image={Calendar} information="Our Team" isInverted={true} />
-      <Features image={GoogleAI} information="Our Team" isInverted={false} />
+      <Features
+        image={MobileDashboard}
+        information="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        isInverted={true}
+        title="Reminders and Notifications"
+      />
+      <Features
+        image={GoogleAI}
+        information="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        isInverted={false}
+        title="Health & Expenses Trackers"
+      />
     </div>
   );
 };
