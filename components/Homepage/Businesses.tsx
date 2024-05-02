@@ -1,9 +1,9 @@
-const Businesses = () => {
+function Businesses() {
   return (
-    <div className="bg-sandy">
+    <div>
       <p>BusinessesContainer</p>
     </div>
   );
-};
+}
 
 export default Businesses;

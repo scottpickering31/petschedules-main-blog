@@ -23,7 +23,7 @@ const Services = ({ name, image }: Props) => {
       onMouseLeave={() => setHover("ease-in-out duration-300")}
     >
       <Link href="/?modal=true" scroll={false}>
-        <div className="border-4 border-gray-300 rounded-2xl bg-slate-100 shadow-lg h-full flex items-center flex-row">
+        <div className="border-4 border-gray-400 rounded-2xl bg-slate-100 shadow-lg h-full flex items-center flex-row">
           <div className="p-10 w-1/3 justify-end flex">
             <Image src={image} alt={name} width={50} height={50} />
           </div>
