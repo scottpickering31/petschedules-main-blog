@@ -15,7 +15,7 @@ const ReviewsContainer = () => {
         className="w-full"
       />
       <div className="absolute inset-0 flex items-center justify-center p-5 flex-col">
-        <h1 className="text-center tracking-wider text-4xl font-bold p-10 underline underline-offset-8">
+        <h1 className="text-center tracking-wider text-4xl font-bold py-10 underline underline-offset-8">
           Reviews
         </h1>
         <div className="flex flex-row gap-4 w-full">
@@ -32,7 +32,7 @@ const ReviewsContainer = () => {
             authorImage={HeadshotThree}
           />
           <Reviews
-            title='"Simplify Your Pets Schedule with PetSchedules"'
+            title='"Simple, Effective, and Hassle-free!"'
             author="Emily-rose Coleson"
             description="As a pet owner with a hectic lifestyle, PetSchedules has been a game-changer for me! This app has revolutionized how I manage my furry friend's appointments, from vet check-ups to grooming sessions and playdates. The interface is sleek and easy to navigate, making it a breeze to book appointments on the go. I love how I can access my pet's schedule from anywhere, whether I'm at work or out running errands. Plus, the reminders ensure I never forget an important date again. PetSchedules has truly simplified my life as a pet parent, and I highly recommend it to anyone looking for a convenient solution to scheduling for their pets!"
             authorImage={HeadshotThree}
