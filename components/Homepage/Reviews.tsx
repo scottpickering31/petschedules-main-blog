@@ -18,10 +18,10 @@ const Reviews = ({ title, description, author, authorImage }: Props) => {
         <Image
           src={authorImage}
           alt="Author Image"
-          className="rounded-full w-40 h-60"
+          className="rounded-full w-20 h-20"
         />
         <p>{author}</p>
-        <div className="border-4 border-gray-400">
+        <div className="border-4 border-gray-300 rounded-2xl p-5">
           <p className="overflow-auto h-40">{description}</p>
         </div>
       </div>

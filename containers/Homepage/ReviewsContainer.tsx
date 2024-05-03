@@ -8,7 +8,7 @@ import HeadshotThree from "../../public/Homepage/pexels-shvetsa-5325840.jpg";
 
 const ReviewsContainer = () => {
   return (
-    <div className="relative">
+    <div className="relative h-screen">
       <Image
         src={HomepageSeparator}
         alt="HomepageSeperator"

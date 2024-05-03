@@ -4,7 +4,7 @@ import PetSchedulesTeam from "@/public/Homepage/PetSchedulesDashboard.png";
 import ReviewsContainer from "@/containers/Homepage/ReviewsContainer";
 import FeaturesContainer from "@/containers/Homepage/FeaturesContainer";
 import ServicesContainer from "@/containers/Homepage/ServicesContainer";
-import AboutContainer from "@/containers/Homepage/BusinessesContainer";
+import SubFeaturesContainer from "@/containers/Homepage/SubFeaturesContainer";
 import HomeNavContainer from "@/components/Homepage/HomepageNavigation/HomeNavContainer";
 
 export default function Home() {
@@ -22,7 +22,7 @@ export default function Home() {
         <ServicesContainer />
         <div id="modal-root"></div>
         <div className="bg-white">
-          <AboutContainer />
+          <SubFeaturesContainer />
         </div>
       </div>
     </div>

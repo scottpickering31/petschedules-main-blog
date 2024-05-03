@@ -18,7 +18,7 @@ const Services = ({ name, image }: Props) => {
   };
   return (
     <div
-      className="hover:scale-105 transition-transform ease-in-out duration-300"
+      className="hover:scale-105 transition-transform ease-in-out duration-300 z-50"
       onMouseEnter={handleHover}
       onMouseLeave={() => setHover("ease-in-out duration-300")}
     >
