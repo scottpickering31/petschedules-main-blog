@@ -6,8 +6,20 @@ import FeaturesContainer from "@/containers/Homepage/FeaturesContainer";
 import ServicesContainer from "@/containers/Homepage/ServicesContainer";
 import SubFeaturesContainer from "@/containers/Homepage/SubFeaturesContainer";
 import HomeNavContainer from "@/components/Homepage/HomepageNavigation/HomeNavContainer";
+import { supabase } from "../../lib/supabase";
 
 export default function Home() {
+  const setNewView = async () => {
+    console.log("set new view");
+    const { data, error } = await supabase
+      .from("views")
+      .insert({ name: "random names" });
+    if (data) console.log(data);
+    if (error) console.log(error);
+  };
+
+  setNewView();
+
   return (
     <div>
       <header>

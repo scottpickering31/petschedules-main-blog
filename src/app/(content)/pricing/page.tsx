@@ -3,7 +3,7 @@
 import React from "react";
 import { useRouter } from "next/navigation";
 import PricingField from "@/components/Pricing/PricingField";
-import { PRICING_DATA } from "../../../data/Pricing/PricingData";
+import { PRICING_DATA } from "../../../../data/Pricing/PricingData";
 import HomeNavContainer from "@/components/Homepage/HomepageNavigation/HomeNavContainer";
 
 const pricingStyles =
