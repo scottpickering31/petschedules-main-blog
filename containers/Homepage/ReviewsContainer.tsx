@@ -8,13 +8,7 @@ import HeadshotThree from "../../public/Homepage/pexels-shvetsa-5325840.jpg";
 
 const ReviewsContainer = () => {
   return (
-    <div className="relative h-screen">
-      <Image
-        src={HomepageSeparator}
-        alt="HomepageSeperator"
-        className="w-full"
-      />
-      <div className="absolute inset-0 flex items-center justify-center p-5 flex-col">
+      <div className="flex items-center justify-center p-5 flex-col">
         <h1 className="text-center tracking-wider text-4xl font-bold py-10 underline underline-offset-8">
           Reviews
         </h1>
@@ -39,7 +33,6 @@ const ReviewsContainer = () => {
           />
         </div>
       </div>
-    </div>
   );
 };
 

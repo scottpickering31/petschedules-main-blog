@@ -13,7 +13,7 @@ export default function AuthLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="bg-sandy">{children}</body>
+      <body>{children}</body>
     </html>
   );
 }

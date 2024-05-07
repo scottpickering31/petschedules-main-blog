@@ -5,6 +5,7 @@ import HomeSearchDisplay from "./HomeSearchDisplay";
 import React, { useState } from "react";
 import Link from "next/link";
 import HomeSearchDefault from "./HomeSearchDefault";
+import BlackButton from "@/components/Shared/Buttons/LinkButtons/BlackButton";
 
 function HomeNavContainer() {
   const [search, setSearch] = useState(false);
@@ -12,12 +13,13 @@ function HomeNavContainer() {
   const setOpacity = search ? "hover:opacity-100" : "opacity-90";
 
   return (
+    <div className="flex justify-center items-center mb-48">
     <nav
-      className={`w-full border-b border-black flex h-15 items-center bg-slate-100 fixed z-50 hover:opacity-100 ${setOpacity}`}
+      className={`w-11/12 drop-shadow-2xl mt-10 rounded-2xl top-0 flex items-center bg-slate-100 fixed z-50 hover:opacity-100 ${setOpacity}`}
     >
       <div className="px-5 w-1/3 items-center flex">
         <Link href="/" className="text-2xl font-bold h-full">
-          PET SCHEDULES
+          BLA BLA BLA
         </Link>
       </div>
       <div className="w-full">
@@ -31,16 +33,12 @@ function HomeNavContainer() {
         <Link href="/login" className="hover:text-fawn">
           Sign In
         </Link>
-        <div className="px-5 hover:text-white hover:scale-110">
-          <Link
-            href="/register"
-            className="border-4 border-gray-500 border-spacing-3 p-4 rounded-full bg-fawn font-bold"
-          >
-            TRY FREE
-          </Link>
+        <div className="px-3 hover:scale-110">
+          <BlackButton href="/register" text="Sign Up"/>
         </div>
       </div>
     </nav>
+    </div>
   );
 }
 

@@ -1,12 +1,16 @@
 import React from "react";
 import Image from "next/image";
-import PetSchedulesTeam from "@/public/Homepage/PetSchedulesDashboard.png";
+import PetSchedulesTeam from "@/public/PetSchedulesTeam/PetSchedulesTeam.png";
 import ReviewsContainer from "@/containers/Homepage/ReviewsContainer";
 import FeaturesContainer from "@/containers/Homepage/FeaturesContainer";
 import ServicesContainer from "@/containers/Homepage/ServicesContainer";
 import SubFeaturesContainer from "@/containers/Homepage/SubFeaturesContainer";
 import HomeNavContainer from "@/components/Homepage/HomepageNavigation/HomeNavContainer";
 import { supabase } from "../../lib/supabase";
+import { Inter } from "next/font/google";
+import Introduction from "@/containers/Homepage/Introduction";
+
+const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   const setNewView = async () => {
@@ -21,14 +25,12 @@ export default function Home() {
   setNewView();
 
   return (
-    <div>
+    <div className={inter.className}>
       <header>
         <HomeNavContainer />
       </header>
-      <div className="pt-40">
-        <div className="flex align-center justify-center">
-          <Image src={PetSchedulesTeam} alt="PetSchedules Team" />
-        </div>
+      <div>
+        <Introduction />
         <FeaturesContainer />
         <ReviewsContainer />
         <ServicesContainer />

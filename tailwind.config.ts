@@ -16,6 +16,7 @@ const config: Config = {
         space: "#3E4E50",
         apricot: "#F2B600",
         fawn: "#F8817F",
+        lavender: "#F4F4F4"
       },
       borderRadius: {
         radXL: "10rem",

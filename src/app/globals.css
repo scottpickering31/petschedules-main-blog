@@ -17,8 +17,7 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  margin: 0;
+  background: linear-gradient(to right, #f8b7ff 20%, #FFDEC1 80%);
 }
 
 @layer utilities {
