@@ -8,7 +8,7 @@ import SubFeatures from "@/components/Homepage/SubFeatures";
 
 const SubFeaturesContainer = () => {
   return (
-    <div className="bg-lavender">
+    <div>
      <SubFeatures />
     </div>
   );

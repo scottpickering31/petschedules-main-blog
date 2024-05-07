@@ -9,6 +9,7 @@ import HomeNavContainer from "@/components/Homepage/HomepageNavigation/HomeNavCo
 import { supabase } from "../../lib/supabase";
 import { Inter } from "next/font/google";
 import Introduction from "@/containers/Homepage/Introduction";
+import KeepTrackContainer from "@/containers/Homepage/KeepTrackContainer";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -32,12 +33,10 @@ export default function Home() {
       <div>
         <Introduction />
         <FeaturesContainer />
-        <ReviewsContainer />
         <ServicesContainer />
-        <div id="modal-root"></div>
-        <div className="bg-white">
-          <SubFeaturesContainer />
-        </div>
+        <KeepTrackContainer />
+        <SubFeaturesContainer />
+        <ReviewsContainer />
       </div>
     </div>
   );
