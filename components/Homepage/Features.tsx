@@ -19,7 +19,7 @@ const Features = ({
 }: Props) => {
   return (
     <div className="w-full px-40 my-20 ">
-      <div className="flex flex-row w-full border-b-black items-center justify-center p-10 shadow-md m-5 rounded-2xl bg-white">
+      <div className="flex flex-row w-full items-center justify-center p-10 shadow-md m-5 rounded-2xl bg-white bg-opacity-60">
         {isInverted ? (
           <div className="flex flex-row items-center gap-5">
             <div className="flex flex-col w-1/2 items-center text-center p-5">

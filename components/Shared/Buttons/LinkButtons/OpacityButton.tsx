@@ -7,7 +7,7 @@ interface Props {
 
 function OpacityButton({ href, text }: Props) {
   return (
-    <Link href={href} className="bg-opacity-10 p-4 rounded-xl bg-black hover:scale-110">
+    <Link href={href} className="bg-opacity-10 p-4 font-bold rounded-xl bg-black hover:scale-110 hover:underline hover:underline-offset-2">
       {text}
     </Link>
   )
