@@ -1,6 +1,5 @@
 import { logout } from "../(auth)/actions/actions"
 import { redirect } from 'next/navigation'
-
 import { createClient } from '@/utils/supabase/server'
 
 async function Dashboard() {

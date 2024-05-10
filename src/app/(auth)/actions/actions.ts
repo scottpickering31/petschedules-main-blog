@@ -5,8 +5,6 @@ import { createClient } from '@/utils/supabase/server'
 
 export async function login(formData: FormData) {
   const supabase = createClient()
-
-
   const data = {
     email: formData.get('email') as string,
     password: formData.get('password') as string,
@@ -33,7 +31,7 @@ export async function logout() {
     }
   
     revalidatePath('/', 'layout')
-    redirect('/dashboard')
+    redirect('/')
   }
 
   export async function signup(formData: FormData) {
@@ -51,5 +49,5 @@ export async function logout() {
     }
   
     revalidatePath('/', 'layout')
-    redirect('/dashboard')
+    redirect('/signup-validate')
   }
