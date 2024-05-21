@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Pet Scheduler App
+
+
+
+Welcome to the Pet Scheduler App! This project is a modern web application designed to help pet owners schedule and manage their pets' activities efficiently. Built with React, Next.js, TypeScript, and Tailwind CSS, and backed by Supabase, the app is both robust and visually appealing. The app is hosted on Vercel for seamless deployment and scalability.
+
+## Table of Contents
+
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Running the App](#running-the-app)
+- [Project Structure](#project-structure)
+- [Contact](#contact)
+
+## Features
+
+- User authentication and profile management
+- Schedule management for multiple pets
+- Reminders and notifications
+- Responsive design
+- Fast and secure backend integration with Supabase
+
+## Tech Stack
+
+- **Frontend**: React, Next.js, TypeScript, Tailwind CSS
+- **Backend**: Supabase (PostgreSQL)
+- **Deployment**: Vercel
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+Make sure you have the following tools installed on your development machine:
+
+- [Node.js](https://nodejs.org/en/download/)
+- [npm](https://www.npmjs.com/get-npm) or [yarn](https://yarnpkg.com/getting-started/install)
+- [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+
+### Installation
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/scottpickering31/petschedules.git
+   cd petschedules
+
+2. **Install dependencies**:
+
+```bash
+npm install
+# or
+yarn install
+```
+Set up environment variables:
+
+3. **Create a .env.local file in the root of your project and add the following environment variables**:
+
+```env
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+**Replace your_supabase_url and your_supabase_anon_key with your actual Supabase credentials**.
+```
+
+### Running the App
+4. **To start the development server, run**:
 
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
+Open http://localhost:3000 with your browser to see the result.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Contact
+If you have any questions or suggestions, feel free to contact me at your-email@example.com.
