@@ -5,7 +5,7 @@ const config: Config = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     "./containers/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
@@ -16,10 +16,13 @@ const config: Config = {
         space: "#3E4E50",
         apricot: "#F2B600",
         fawn: "#F8817F",
-        lavender: "#F4F4F4"
+        lavender: "#F4F4F4",
       },
       borderRadius: {
         radXL: "10rem",
+      },
+      fontSize: {
+        xxs: ".55rem",
       },
       textColor: {
         sandy: "#F5AC72",

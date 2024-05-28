@@ -25,23 +25,32 @@ export default async function LoginPage() {
             height={250}
           />
         </div>
-        <h1 className="text-4xl"> Log in to your account</h1>
+        <h1 className="text-3xl"> Log in to your account</h1>
         <div className="my-5 flex flex-nowrap gap-2">
           <p>Don't have an account?</p>
-          <Link href="/register" className="underline font-bold">
+          <Link href="/register" className="underline font-bold text-blue-500">
             Sign up here
           </Link>
         </div>
-        <div className="gap-5 flex flex-col">
-          <p>Login with Google</p>
-          <label htmlFor="email">Email:</label>
-          <input
-            id="email"
-            name="email"
-            type="email"
-            required
-            className="rounded-xl"
-          />
+        <div className="flex flex-col">
+          <div className="flex flex-col items-center">
+            <p>Login with Google</p>
+          </div>
+          <p className="text-center p-5 text-xxs text-gray-400">
+            Or with email and password
+          </p>
+          <div className="flex flex-col">
+            <label htmlFor="email" className="font-bold">
+              Email address
+            </label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              required
+              className="rounded-xl text-xl p-2"
+            />
+          </div>
           {/* <label htmlFor="password">Password:</label>
           <input
             id="password"
