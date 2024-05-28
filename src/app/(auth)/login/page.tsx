@@ -3,6 +3,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { createClient } from "@/utils/supabase/server";
 import { redirect } from "next/navigation";
+import EmailLoginInput from "@/components/Login/EmailLoginInput";
+import PasswordLoginInput from "@/components/Login/PasswordLoginInput";
 
 export default async function LoginPage() {
   const supabase = createClient();
@@ -36,30 +38,19 @@ export default async function LoginPage() {
           <div className="flex flex-col items-center">
             <p>Login with Google</p>
           </div>
-          <p className="text-center p-5 text-xxs text-gray-400">
+          <p className="text-center p-5 text-sm text-gray-400">
             Or with email and password
           </p>
           <div className="flex flex-col">
-            <label htmlFor="email" className="font-bold">
-              Email address
-            </label>
-            <input
-              id="email"
-              name="email"
-              type="email"
-              required
-              className="rounded-xl text-xl p-2"
-            />
+            <EmailLoginInput />
+            {/* <PasswordLoginInput /> */}
           </div>
-          {/* <label htmlFor="password">Password:</label>
-          <input
-            id="password"
-            name="password"
-            type="password"
-            required
-            className="rounded-xl"
-          /> */}
-          <button formAction={login}>Log in</button>
+          <div className="mt-10">
+            <button className="bg-gray-300 py-1 px-8 rounded-lg border-gray-400 border text-gray-500">
+              Next
+            </button>
+          </div>
+          {/* <button formAction={login}>Log in</button> */}
         </div>
       </form>
     </div>
