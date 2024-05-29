@@ -1,12 +1,26 @@
+// components/Login/EmailLoginInput.tsx
 "use client";
-import React, { useEffect, useRef } from "react";
+import { useAppContext } from "@/lib/context/inputcontext";
+import React, { useState } from "react";
 
 function EmailLoginInput() {
-  const inputRef = useRef(null);
+  const { input, setInput, setStep } = useAppContext();
+  const [email, setEmail] = useState(input);
+  const [error, setError] = useState("");
 
-  useEffect(() => {
-    inputRef.current.focus();
-  }, []);
+  const validateEmail = (email: string) => {
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(String(email).toLowerCase());
+  };
+
+  const handleNext = () => {
+    if (validateEmail(email)) {
+      setInput(email);
+      setStep(2);
+    } else {
+      setError("Please enter a valid email address.");
+    }
+  };
 
   return (
     <div>
@@ -18,9 +32,18 @@ function EmailLoginInput() {
         name="email"
         type="email"
         required
+        autoFocus
         className="rounded-xl text-lg p-3 w-full"
-        ref={inputRef}
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
       />
+      {error && <p className="text-red-500">{error}</p>}
+      <button
+        onClick={handleNext}
+        className="bg-gray-300 py-1 px-8 rounded-lg border-gray-400 border text-gray-500 mt-2"
+      >
+        Next
+      </button>
     </div>
   );
 }

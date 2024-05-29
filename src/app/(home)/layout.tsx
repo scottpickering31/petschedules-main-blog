@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Footer from "@/components/Shared/Footer/Footer";
 import "../globals.css";
 import SignUpDialog from "@/components/Modals/signupdialog";
+import { AppWrapper } from "@/lib/context/inputcontext";
 
 export const metadata: Metadata = {
   title: "PetSchedules - Where Pets and Plans Purrfectly Align",
@@ -18,8 +19,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <AppWrapper>
         {children}
         {auth}
+        </AppWrapper>
         <SignUpDialog />
         <Footer />
       </body>

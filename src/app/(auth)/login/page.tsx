@@ -1,20 +1,30 @@
-import { login } from "../actions/actions";
+// pages/login.tsx
+"use client";
+import { useEffect } from "react";
+import { useRouter } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
-import { createClient } from "@/utils/supabase/server";
-import { redirect } from "next/navigation";
 import EmailLoginInput from "@/components/Login/EmailLoginInput";
 import PasswordLoginInput from "@/components/Login/PasswordLoginInput";
+import { useAppContext } from "@/lib/context/inputcontext";
+import { checkUser } from "@/lib/auth/checkUser";
 
-export default async function LoginPage() {
-  const supabase = createClient();
+export default function LoginPage() {
+  const router = useRouter();
+  const { step } = useAppContext();
 
-  const { data, error } = await supabase.auth.getUser();
-  if (error || !data?.user) {
-    console.log(error);
-  } else {
-    redirect("/dashboard");
-  }
+  useEffect(() => {
+    async function fetchUser() {
+      const { user, error } = await checkUser();
+      if (user) {
+        router.push("/dashboard");
+      } else if (error) {
+        console.error(error);
+      }
+    }
+
+    fetchUser();
+  }, [router]);
 
   return (
     <div className="flex flex-col h-screen">
@@ -22,7 +32,7 @@ export default async function LoginPage() {
         <div className="flex items-center justify-center mb-10">
           <Image
             src="/PetSchedulesTeam/PetSchedulesTeam.png"
-            alt="awdawd"
+            alt="PetSchedules Logo"
             width={250}
             height={250}
           />
@@ -42,15 +52,13 @@ export default async function LoginPage() {
             Or with email and password
           </p>
           <div className="flex flex-col">
-            <EmailLoginInput />
-            {/* <PasswordLoginInput /> */}
+            {step === 1 ? <EmailLoginInput /> : <PasswordLoginInput />}
           </div>
           <div className="mt-10">
             <button className="bg-gray-300 py-1 px-8 rounded-lg border-gray-400 border text-gray-500">
-              Next
+              {step === 1 ? "Next" : "Log In"}
             </button>
           </div>
-          {/* <button formAction={login}>Log in</button> */}
         </div>
       </form>
     </div>

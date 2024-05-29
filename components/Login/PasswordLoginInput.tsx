@@ -1,3 +1,4 @@
+// components/Login/PasswordLoginInput.tsx
 "use client";
 import React from "react";
 
@@ -5,7 +6,7 @@ function PasswordLoginInput() {
   return (
     <div>
       <label htmlFor="password" className="font-bold">
-        Password:
+        Password
       </label>
       <input
         id="password"
